@@ -4,6 +4,7 @@ name = "libevdev-sys"
 version = "0.1.0"
 description = "FFI bindings to libevdev and 'linux/input.h'"
 repository = "https://github.com/jonas-schievink/libevdev-sys.git"
+license = "CC0"
 
 [dependencies]
 libc = "0.2.14"
