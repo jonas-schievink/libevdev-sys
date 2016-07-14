@@ -5,5 +5,6 @@
 
 extern crate libc;
 
-pub mod linux_input;
 pub mod evdev;
+pub mod input_event_codes;
+pub mod linux_input;
