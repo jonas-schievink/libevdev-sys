@@ -42,7 +42,10 @@ pub fn open() -> *mut libevdev {
     let fd = file.into_raw_fd();
 
     let mut evdev: *mut libevdev = ptr::null_mut();
-    assert_eq!(unsafe { libevdev_new_from_fd(fd, &mut evdev) }, 0, "opening device failed");
+    let ret = unsafe { libevdev_new_from_fd(fd, &mut evdev) };
+    if ret != 0 {
+        panic!("`libevdev_new_from_fd` failed: {}", ret);
+    }
 
     let name = unsafe { libevdev_get_name(evdev) };
     println!("device name: {}", unsafe { CStr::from_ptr(name) }.to_str().unwrap());
