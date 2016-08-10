@@ -1,5 +1,5 @@
 [package]
-authors = ["Jonas Schievink <jonas@schievink.net>"]
+authors = ["Jonas Schievink <jonasschievink@gmail.com>"]
 name = "libevdev-sys"
 version = "0.1.1"
 description = "FFI bindings to libevdev and 'linux/input.h'"
