@@ -1,5 +1,7 @@
 # Rust FFI bindings for libevdev
 
+***DEPRECATED: There are other bindings and reimplementations of evdev functionality that are much better than this.***
+
 This crate provides generated FFI bindings for `libevdev` and `linux/input.h`.
 
 To regenerate the bindings, run
